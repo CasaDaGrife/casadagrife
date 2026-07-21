@@ -80,11 +80,11 @@ nav a:hover{
 
 .hero{
     min-height:100vh;
-    display:flex;
+    display:grid;
+    grid-template-columns:1fr 1fr;
     align-items:center;
-    position:relative;
-    overflow:hidden;
-    background:linear-gradient(135deg,#fafafa 0%,#f2f2f2 100%);
+    background:#f8f8f8;
+    padding:120px 5%;
 }
 
 .overlay{
@@ -94,8 +94,8 @@ nav a:hover{
 }
 
 .hero-content{
-    position:relative;
-    max-width:700px;
+    max-width:620px;
+    z-index:2;
 }
 
 .hero span{
@@ -322,5 +322,20 @@ nav{
     .modelos-grid{
         grid-template-columns:1fr;
     }
+
+    .hero-image{
+
+    width:100%;
+    height:700px;
+
+    background-image:url("img/hero/hero.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    border-radius:30px;
+
+    box-shadow:0 30px 60px rgba(0,0,0,.15);
 
 }
