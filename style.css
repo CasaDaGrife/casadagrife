@@ -548,3 +548,117 @@ footer p{
     }
 
 }
+
+/* =======================================================
+   COLEÇÃO
+=======================================================*/
+
+.colecao{
+
+    background:#fff;
+
+}
+
+.modelo-linha{
+
+    width:min(1280px,90%);
+
+    margin:120px auto;
+
+    display:grid;
+
+    grid-template-columns:1.2fr .8fr;
+
+    gap:80px;
+
+    align-items:center;
+
+}
+
+.modelo-linha.reverse{
+
+    grid-template-columns:.8fr 1.2fr;
+
+}
+
+.modelo-linha.reverse .modelo-foto{
+
+    order:2;
+
+}
+
+.modelo-linha.reverse .modelo-texto{
+
+    order:1;
+
+}
+
+.modelo-foto{
+
+    overflow:hidden;
+
+    border-radius:26px;
+
+}
+
+.modelo-foto img{
+
+    width:100%;
+
+    display:block;
+
+    transition:.5s;
+
+}
+
+.modelo-foto:hover img{
+
+    transform:scale(1.04);
+
+}
+
+.modelo-texto h3{
+
+    font-size:52px;
+
+    margin-bottom:25px;
+
+}
+
+.modelo-texto p{
+
+    font-size:19px;
+
+    color:#666;
+
+    line-height:1.9;
+
+    margin-bottom:35px;
+
+}
+
+@media(max-width:900px){
+
+.modelo-linha,
+.modelo-linha.reverse{
+
+grid-template-columns:1fr;
+
+gap:35px;
+
+}
+
+.modelo-linha.reverse .modelo-foto,
+.modelo-linha.reverse .modelo-texto{
+
+order:initial;
+
+}
+
+.modelo-texto h3{
+
+font-size:38px;
+
+}
+
+}
