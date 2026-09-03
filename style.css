@@ -662,3 +662,83 @@ font-size:38px;
 }
 
 }
+
+/* ===========================
+   HISTÓRIA DA JOCA
+=========================== */
+
+.historia-joca {
+    padding: 120px 0;
+    background: #f5f3ed;
+}
+
+.historia-joca-grid {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.historia-joca-texto {
+    text-align: center;
+}
+
+.historia-joca-texto .subtitulo {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: #69794e;
+    margin-bottom: 20px;
+}
+
+.historia-joca-texto h2 {
+    font-size: 48px;
+    line-height: 1.15;
+    font-weight: 500;
+    margin-bottom: 45px;
+}
+
+.historia-joca-texto p {
+    max-width: 760px;
+    margin: 0 auto 22px;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #666;
+}
+
+.historia-joca-texto strong {
+    color: #333;
+    font-weight: 600;
+}
+
+
+/* ===========================
+   RESPONSIVO
+=========================== */
+
+@media (max-width: 900px) {
+
+    .historia-joca {
+        padding: 80px 20px;
+    }
+
+    .historia-joca-texto h2 {
+        font-size: 38px;
+    }
+
+    .historia-joca-texto p {
+        font-size: 17px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .historia-joca {
+        padding: 70px 20px;
+    }
+
+    .historia-joca-texto h2 {
+        font-size: 32px;
+    }
+
+}
